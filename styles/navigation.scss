@@ -1,0 +1,48 @@
+
+lable {
+  font-size: 0.75em;
+  color: #666666;;
+  text-transform: uppercase;
+}
+
+select {
+  width: 100px;
+  background-color: #f7f7f7;
+  border: none;
+  font-weight: 700;
+
+  margin-left: -5px;
+}
+
+.navigation {
+  display: flex;
+
+  &__title {
+    flex-grow: 1;
+    letter-spacing: 0.1em;
+    font-size: 2.25em;
+  }
+}
+
+.search {
+  display: flex;
+
+  &__filter {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  &__sort {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
